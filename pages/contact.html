@@ -16,21 +16,18 @@
 </head>
 
 <body>
-    <script src="../js/sesiones.js"></script>
     <div id="container">
         <header>
             <div class="logo">
                 <div class="fondo_logo"><i class="fas fa-graduation-cap"></i>Codo a Codo</div>
             </div>
             <nav>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
                     <li>
-                        <a href="../home.html"><i class="far fa-building"></i><label>Home</label></a>
+                        <a href="../pages/home.html"><i class="far fa-building"></i><label>Home</label></a>
                     </li>
                     <li>
-                        <a href="../pages/clases.html"><i class="fas fa-glasses"></i><label>Clases</label></a>
+                        <a href="../pages/classes.html"><i class="fas fa-glasses"></i><label>Clases</label></a>
                     </li>
                     <li>
                         <a href="../pages/contact.html"><i class="far fa-keyboard"></i><label>Contacto</label></a>
@@ -38,37 +35,30 @@
                 </ul>
             </nav>
         </header>
-        <script>
-            if (isSetUser()) {
-                var menu = document.getElementsByTagName("template")[0].innerHTML;
-                document.getElementsByClassName('menu')[0].innerHTML = menu;
-            }
-        </script>
         <div class="container_seccion">
             <form id="contact" class="options">
                 <div class="option_no_label">
-                    <h3>Contactanos con tus preguntas</h3>
+                    <h3>Contacta al Soporte Tecnico</h3>
                 </div>
-                <div class="leyenda"><label>Nombres:</label></div>
-                <div class="option"><input class="campo" id="nombre" name="nombre" type="text" placeholder="Nombres" required></div>
-                <div class="leyenda"><label>Apellido:</label></div>
-                <div class="option"><input class="campo" id="apellido" name="apellido" type="text" placeholder="Apellido" required></div>
+                <div class="leyenda"><label>Nombre/s:</label></div>
+                <div class="option"><input class="campo" id="nombre" name="nombre" type="text" placeholder="Nombre/s" required></div>
+                <div class="leyenda"><label>Apellido/s:</label></div>
+                <div class="option"><input class="campo" id="apellido" name="apellido" type="text" placeholder="Apellido/s" required></div>
                 <div class="leyenda"><label>Correo electrónico:</label></div>
                 <div class="option"><input class="campo" id="email" name="email" type="email" placeholder="usuario@dominio.com"></div>
-                <div class="leyenda"><label>Ingresa tu mensaje:</label></div>
-                <div class="option"><textarea class="campo" rows="5" id="comments" name="comments" placeholder="Escribí aquí tu comentario"></textarea></div>
+                <div class="leyenda"><label>Ingresa tu consulta:</label></div>
+                <div class="option"><textarea class="campo" rows="5" id="comments" name="comments" placeholder="Escribí aquí tu consulta"></textarea></div>
                 <div class="leyenda">
-                    <label><i class="fab fa-whatsapp"></i> Enviar por whatsapp: </label>
+                    <label> Enviar Consulta: </label>
                 </div>
                 <div class="option">
-                    <button class="boton" id="submit" type="submit" value="Contactar"><i class="fab fa-whatsapp"></i> Contactar</button>
+                    <button class="boton" id="submit" type="submit" value="Contactar"> Enviar</button>
                 </div>
             </form>
         </div>
         <footer> Copyright 2021</footer>
     </div>
     <script src="../js/app.js"></script>
-    <script src="../js/whatsapp.js"></script>
 </body>
 
 </html>

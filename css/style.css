@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background-image: url('../assets/images/movie_bg8_top.jpg');
     background-position: top center;
     background-repeat: no-repeat;
@@ -99,114 +99,6 @@ nav {
     padding: 0;
     position: -webkit-sticky;
     position: sticky;
-}
-/****************************************/
-/*               MENU                   */
-/****************************************/
-
-.menu {
-    list-style-type: none;
-    list-style: none;
-    width: 100%;
-    clear: both;
-    margin: 0;
-    padding: 0;
-    display: none;
-    transition: all .2s ease-out;
-}
-
-.menu li {
-    padding: 5px 50px 5px 5px;
-    display: block;
-    width: auto;
-}
-
-.menu label {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.menu li:hover,
-.menu-btn:hover {
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    text-align: left;
-    padding: 10px 10px;
-    display: block;
-}
-
-.menu li i {
-    color: white;
-}
-/* menu icon */
-
-.menu-icon {
-    cursor: default;
-    display: block;
-    float: right;
-    position: relative;
-    user-select: none;
-    padding: 20px;
-}
-
-.menu-icon .navicon {
-    background: #fff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: all .2s ease-out;
-    width: 20px;
-}
-
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.menu-icon .navicon:before {
-    top: 5px;
-}
-
-.menu-icon .navicon:after {
-    top: -5px;
-}
-/* menu btn */
-
-.menu-btn {
-    display: none;
-}
-
-.menu-btn:checked~.menu {
-    flex-direction: column;
-    display: flex;
-    margin-left: -10px;
-}
-
-.menu-btn:checked~.menu-icon .navicon {
-    background: transparent;
-}
-
-.menu-btn:checked~.menu-icon .navicon:before {
-    transform: rotate(-45deg);
-}
-
-.menu-btn:checked~.menu-icon .navicon:after {
-    transform: rotate(45deg);
-}
-
-.menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-    top: 0;
 }
 /**************************************************/
 /*                    HOME                        */
@@ -363,7 +255,7 @@ nav {
     display: block;
 }
 /**************************************************/
-/*                 movies                         */
+/*                 classes                        */
 /**************************************************/
 
 section {
@@ -658,114 +550,6 @@ input.checkbox:focus:checked {
 .invalid-feedback {
     color: #cc0000;
     font-size: 0.75rem;
-}
-/************************************************/
-/*                 SWITCHS                      */
-/************************************************/
-/* The switch - the box around the slider */
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 46px;
-    height: 20px;
-}
-/* Hide default HTML checkbox */
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-/* The slider */
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #333;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 20px;
-    border: solid 1px white;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%
-}
-
-input:checked+.slider {
-    background-color: greenyellow;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px greenyellow;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-/*******************************************/
-/*            formulario opciones          */
-/*******************************************/
-
-.options {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    display: grid;
-    grid-gap: 10px;
-    grid: auto / auto auto;
-    background-color: #333333;
-    border: 1px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.options .leyenda {
-    position: relative;
-    padding: 5px;
-    text-align: right;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.options .option {
-    position: relative;
-    padding: 5px;
-    text-align: left;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.options .option_no_label {
-    position: relative;
-    padding: 5px;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.options .option input,
-.options .option select,
-.option textarea {
-    width: 95%;
-    max-width: 20rem;
 }
 /************************************************/
 /*               ANIMACIONES                    */

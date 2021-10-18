@@ -22,14 +22,12 @@
                 <div class="fondo_logo"><i class="fas fa-graduation-cap"></i>Codo a Codo</div>
             </div>
             <nav>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
                     <li>
-                        <a href="../home.html"><i class="far fa-building"></i><label>Home</label></a>
+                        <a href="../pages/home.html"><i class="far fa-building"></i><label>Home</label></a>
                     </li>
                     <li>
-                        <a href="../pages/clases.html"><i class="fas fa-glasses"></i><label>Clases</label></a>
+                        <a href="../pages/classes.html"><i class="fas fa-glasses"></i><label>Clases</label></a>
                     </li>
                     <li>
                         <a href="../pages/contact.html"><i class="far fa-keyboard"></i><label>Contacto</label></a>
@@ -38,14 +36,6 @@
             </nav>
         </header>
         <div class="container_seccion">
-            <div class="filtro">
-                <select name="categorias" onChange="seleccionaPeliculas(this.options[this.selectedIndex].value)">
-                <option selected disabled >Filtrar Películas</option>
-                <option value="todas">Todas</option>
-                <option value="marvel">Marvel</option>
-                <option value="dc">DC</option>
-            </select>
-            </div>
             <section>
                 <template>
                 <figure class="peliculas ${categoria} movie-mostrar">
