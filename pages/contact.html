@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/59c8ee105d.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Contacto</title>
 </head>
 
@@ -35,36 +37,69 @@
                 </ul>
             </nav>
         </header>
-        <div class="container_seccion">
-            <form id="contact" class="options">
-                <div class="option_no_label">
-                    <h3>Contacta al Soporte Tecnico</h3>
+        <div class="container-lg">
+            <form id="contacto" class="row g-3 needs-validation" action="https://www.w3schools.com/action_page.php" method="post" target="__blank">
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="fname" required>
+                    <div class="invalid-feedback">
+                        Por favor ingrese el Nombre!
+                    </div>
                 </div>
-                <div class="leyenda"><label>Nombre/s:</label></div>
-                <div class="option"><input class="campo" id="nombre" name="nombre" type="text" placeholder="Nombre/s" required></div>
-
-                <div class="leyenda"><label>Apellido/s:</label></div>
-                <div class="option"><input class="campo" id="apellido" name="apellido" type="text" placeholder="Apellido/s" required></div>
-                
-                <div class="leyenda"><label>Correo electrónico:</label></div>
-                <div class="option"><input class="campo" id="email" name="email" type="email" placeholder="usuario@dominio.com" required></div>
-
-                <div class="leyenda"><label>Ingresa tu consulta:</label></div>
-                <div class="option"><textarea class="campo" rows="5" id="comments" name="comments" placeholder="Escribí aquí tu consulta" required></textarea></div>
-                <div class="leyenda">
-                    <label> Enviar Consulta: </label>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" name="lname" required>
+                    <div class="invalid-feedback">
+                        Por favor ingrese el Apellido
+                    </div>
                 </div>
-                <div class="option">
-                    <button class="boton" id="submit" type="submit" value="Contactar"> Enviar</button>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Usuario</label>
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="validationCustomUsername" name="user"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un Usuario.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" name="city" required>
+                    <div class="invalid-feedback">
+                        Ingrese una ciudad valida.
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label for="validationCustom04" class="form-label">Provincia</label>
+                    <input type="text" class="form-control" id="validationCustom04" name="state" required>
+                    <div class="invalid-feedback">
+                        Ingrese una provincia valida.
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom05" class="form-label">C.P.</label>
+                    <input type="number" class="form-control" id="validationCustom05" name="zip" required>
+                    <div class="invalid-feedback">
+                        Ingrese Codigo Postal.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom05" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationCustom06" name="email" required>
+                    <div class="invalid-feedback">
+                        Ingrese Codigo Postal.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary btn-block" type="submit">Enviar Formulario</button>
                 </div>
             </form>
         </div>
-        <footer> Copyright 2021</footer>
-    </div>
-    <script src="../js/app.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
 </body>
 
 </html>
