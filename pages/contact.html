@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <div class="container">
         <header>
             <div class="logo">
                 <div class="fondo_logo"><i class="fas fa-graduation-cap"></i>Codo a Codo</div>
@@ -37,8 +37,9 @@
                 </ul>
             </nav>
         </header>
-        <div class="container-lg">
-            <form id="contacto" class="row g-3 needs-validation" action="https://www.w3schools.com/action_page.php" method="post" target="__blank">
+        <div class="container-sm container-lg">
+            <form id="contacto" class="row g-3 needs-validation" action="https://www.w3schools.com/action_page.php"
+                method="post" target="__blank">
                 <div class="col-md-4">
                     <label for="validationCustom01" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="validationCustom01" name="fname" required>
@@ -79,7 +80,7 @@
                 </div>
                 <div class="col-md-2">
                     <label for="validationCustom05" class="form-label">C.P.</label>
-                    <input type="number" class="form-control" id="validationCustom05" name="zip" required>
+                    <input type="number" class="form-control" id="validationCustom05" name="zip">
                     <div class="invalid-feedback">
                         Ingrese Codigo Postal.
                     </div>
@@ -92,7 +93,10 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary btn-block" type="submit">Enviar Formulario</button>
+                    <button class="btn btn-primary btn-block gradiente" type="submit">Enviar Formulario</button>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary btn-block gradiente" type="reset">Borrar Formulario</button>
                 </div>
             </form>
         </div>

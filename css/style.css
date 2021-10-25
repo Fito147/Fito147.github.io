@@ -9,10 +9,19 @@ body {
     background-position: top center;
     background-repeat: repeat;
     background-size: 100%;
+    display: flex;
     color: rgb(143, 25, 25);
     margin: 0px;
     padding: 0px;
     font-size: 14px;
+}
+
+table {
+    min-height:100%;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 15px;
+    
 }
 
 .container {
@@ -40,9 +49,9 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 1070;
     display: grid;
-    grid-template-areas: 'logo nav nav nav ';
+    grid-template-areas: 'logo nav nav nav';
 }
 
 footer {
@@ -137,6 +146,7 @@ nav {
 /*        DEFINO COMPORTAMIENTO X TAMAÑO      */
 /**********************************************/
 
+/*ESTE GRID TEMPLEATE NO LO TENGO*/
 @media screen and (min-width: 360px) {
     /* celulares grandes */
     section {
@@ -229,10 +239,12 @@ nav {
     .menu-icon {
         display: none;
     }
+    /*NO TENGO SECTION en el mio*/
     section {
         /* grid-template-columns: 17% 17% 17% 17% 17%; */
         grid-template-columns: auto auto auto auto auto;
     }
+    
     .mostrar {
         height: 100px;
         transition: all 0.5s;
@@ -240,138 +252,23 @@ nav {
         margin: 20px;
     }
     
-/************************************************/
-/*               FORMULARIOS                    */
-/************************************************/
 
-
-
-
-
-
-
-/*
-:focus-visible {
-    outline: 0px;
-}
-
-.campo {
-    background-color: #333333;
-    border: solid white 1px;
-    color: white;
-    padding: 5px;
-    font-size: 0.75rem;
-    font-family: 'Open Sans', sans-serif;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-
-.boton {
-    background-color: #cc0000;
-    border: solid 1px rgb(44, 0, 0);
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    padding: 5px;
-    box-shadow: black 1px 1px 4px;
-}
-
-.boton:active {
-    background-color: black;
-    position: relative;
-    box-shadow: 0 0 0;
-    top: -2px;
-    left: 2px;
-}
-
-.registro {
-    margin: 30px;
-    padding: 20px;
-    background-color: #333333;
-    border: solid 2px black;
-    border-radius: 10px;
-    font-size: 0.75rem;
-}
-
-.registro input,
-.registro select,
-.registro input:focus,
-.registro select:focus,
-.registro input:active,
-.registro select:active,
-.registro input:focus:valid,
-.registro select:focus:invalid,
-.registro input:active:valid,
-.registro select:active:invalid {
-    background-color: #333333;
-    color: #666666;
-    border: solid white 1px;
-    border-radius: 0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    box-shadow: 0 0 0;
-}
-
-.form-control.is-valid:focus,
-.was-validated .form-control:focus:valid,
-.form-control.is-invalid:focus,
-.was-validated .form-control:focus:invalid,
-.form-select.is-invalid:focus,
-.was-validated .form-select:focus:invalid,
-.form-select.is-valid:focus,
-.was-validated .form-select:focus:valid {
-    box-shadow: 0 0 0;
-}
-
-.registro .checkbox,
-input.checkbox:focus,
-input.checkbox:active,
-input.checkbox:checked,
-input.checkbox:focus:checked {
-    cursor: pointer;
-    background-color: #333333;
-    color: #666666;
-    border: solid white 1px;
-    border-radius: 5px;
-}
-
-.form-check-input.is-invalid:focus,
-.was-validated .form-check-input:focus:invalid,
-.form-check-input.is-valid:focus,
-.was-validated .form-check-input:focus:valid,
-.form-check-input.is-valid:focus:checked,
-.was-validated .form-check-input:focus:checked:valid {
-    box-shadow: 0 0 0;
-    border: solid 1px;
-}
-
-.invalid-feedback {
-    color: #cc0000;
-    font-size: 0.75rem;
-}*/
 /************************************************/
 /*               ANIMACIONES                    */
 /************************************************/
 
-@keyframes gardiente {
+@keyframes gradiente {
     0% {
-        background-color: #cc0000;
+        background-color: #4b40ee;
     }
-    50% {
-        background-color: rgb(44, 0, 0);
-    }
-    75% {
-        background-color: #cc0000;
+       100% {
+        background-color: #d428b8;
     }
 }
-/* The element to apply the animation to */
+/* Se aplica al boton del formulario en contacto */
 
 .gradiente {
-    animation-name: gardiente;
+    animation-name: gradiente;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
