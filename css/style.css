@@ -1,10 +1,10 @@
 * {
     font-family: 'Open Sans', sans-serif;
-    /* border: greenyellow 1px dotted; */
+    
 }
 
 body {
-    /*background-color: rgb(0, 0, 0);*/
+    
     background-image: url('../assets/background/codo_a_codo_back3.JPG');
     background-position: top center;
     background-repeat: repeat;
@@ -14,14 +14,6 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
-}
-
-table {
-    min-height:100%;
-    display: flex;
-    padding-top: 30px;
-    padding-left: 15px;
-    
 }
 
 .container {
@@ -97,32 +89,15 @@ nav {
 /**************************************************/
 /*                    HOME                        */
 /**************************************************/
-/*
-.logos {
+
+table {
+    min-height:100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 99%;
-    padding: 5px;
-    margin: 0;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: larger;
+    
 }
-
-.logos div {
-    text-align: center;
-    vertical-align: middle;
-    padding: 2px;
-    background-color: white;
-    width: 100px;
-    box-shadow: white 0 0 10px;
-    margin: 5px;
-    max-height: 45px;
-}
-
-.logos img {
-    height: 40px;
-    max-width: 100%;
-}*/
 /**************************************************/
 /*                 classes                        */
 /**************************************************/
@@ -143,19 +118,12 @@ nav {
 
 
 /**********************************************/
-/*        DEFINO COMPORTAMIENTO X TAMAÑO      */
+/*         COMPORTAMIENTO X TAMAÑO            */
 /**********************************************/
 
-/*ESTE GRID TEMPLEATE NO LO TENGO*/
-@media screen and (min-width: 360px) {
-    /* celulares grandes */
-    section {
-        grid-template-columns: 45% 45%;
-    }
-}
 
 @media screen and (min-width: 768px) {
-    /* tablet */
+   
     header {
         grid-template-areas: 'logo nav nav nav';
     }
@@ -173,10 +141,7 @@ nav {
         max-height: 50px;
         margin: 5px;
     }
-    section {
-        /* grid-template-columns: 22% 22% 22% 22%; */
-        grid-template-columns: auto auto auto auto;
-    }
+    
     .menu-btn:checked~.menu {
         flex-direction: row;
         display: flex;
@@ -207,7 +172,7 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-    /* pc escritorio */
+    
     header {
         grid-template-areas: 'logo logo logo logo' 'nav nav nav nav';
     }
@@ -239,12 +204,7 @@ nav {
     .menu-icon {
         display: none;
     }
-    /*NO TENGO SECTION en el mio*/
-    section {
-        /* grid-template-columns: 17% 17% 17% 17% 17%; */
-        grid-template-columns: auto auto auto auto auto;
-    }
-    
+       
     .mostrar {
         height: 100px;
         transition: all 0.5s;
